@@ -1,5 +1,7 @@
 import json
 from reverse_list import reverse_list, reverse_list_2 
+from reverse_string import reverse_string
+from is_english_vowel import is_english_vowel
 
 
 def test_reverse_list():
@@ -8,28 +10,11 @@ def test_reverse_list():
 
 
 # ------------------------------------------------------------------------------
-
-def reverse_string(s):
-    """
-    Reverses order of characters in string s.
-    """
-    return None
-
-
 def test_reverse_string():
     assert reverse_string("foobar") == "raboof"
 
 
 # ------------------------------------------------------------------------------
-
-def is_english_vowel(c):
-    """
-    Returns True if c is an english vowel
-    and False otherwise.
-    """
-    return None
-
-
 def test_is_english_vowel():
     assert is_english_vowel('a')
     assert is_english_vowel('e')
