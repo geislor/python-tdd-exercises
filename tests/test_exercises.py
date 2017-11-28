@@ -2,7 +2,7 @@ import json
 from reverse_list import reverse_list, reverse_list_2 
 from reverse_string import reverse_string
 from is_english_vowel import is_english_vowel
-from count_num_vowels import count_num_vowels, count_num_vowels_filter
+from count_num_vowels import count_num_vowels
 
 
 def test_reverse_list():
@@ -40,17 +40,14 @@ def test_is_english_vowel():
 def test_count_num_vowels():
     sentence = "hey ho let's go"
     assert count_num_vowels(sentence) == 5
-    assert count_num_vowels_filter(sentence) == 5
     sentence = "HEY ho let's GO"
     assert count_num_vowels(sentence) == 5
-    assert count_num_vowels_filter(sentence) == 5
     paragraph = """She told me her name was Billie Jean,
                    as she caused a scene
                    Then every head turned with eyes
                    that dreamed of being the one
                    Who will dance on the floor in the round"""
     assert count_num_vowels(paragraph) == 54
-    assert count_num_vowels_filter(paragraph) == 54
 
 
 # ------------------------------------------------------------------------------
