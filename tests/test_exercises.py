@@ -1,15 +1,10 @@
 import json
-
-
-def reverse_list(l):
-    """
-    Reverses order of elements in list l.
-    """
-    return None
+from reverse_list import reverse_list, reverse_list_2 
 
 
 def test_reverse_list():
     assert reverse_list([1, 2, 3, 4, 5]) == [5, 4, 3, 2, 1]
+    assert reverse_list_2([1, 2, 3, 4, 5]) == [5, 4, 3, 2, 1]
 
 
 # ------------------------------------------------------------------------------
