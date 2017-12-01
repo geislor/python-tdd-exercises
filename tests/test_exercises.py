@@ -3,6 +3,9 @@ from reverse_list import reverse_list, reverse_list_2
 from reverse_string import reverse_string
 from is_english_vowel import is_english_vowel
 from count_num_vowels import count_num_vowels
+from histogram import histogram
+from get_word_lengths import get_word_lengths
+from find_lonest_word import find_longest_word
 
 
 def test_reverse_list():
@@ -35,8 +38,6 @@ def test_is_english_vowel():
 
 
 # ------------------------------------------------------------------------------
-
-
 def test_count_num_vowels():
     sentence = "hey ho let's go"
     assert count_num_vowels(sentence) == 5
@@ -51,43 +52,17 @@ def test_count_num_vowels():
 
 
 # ------------------------------------------------------------------------------
-
-def histogram(l):
-    """
-    Converts a list of integers into a simple string histogram.
-    """
-    return None
-
-
 def test_histogram():
     assert histogram([2, 5, 1]) == '##\n#####\n#'
 
 
 # ------------------------------------------------------------------------------
-
-def get_word_lengths(s):
-    """
-    Returns a list of integers representing
-    the word lengths in string s.
-    """
-    return None
-
-
 def test_get_word_lengths():
     text = "Three tomatoes are walking down the street"
     assert get_word_lengths(text) == [5, 8, 3, 7, 4, 3, 6]
 
 
 # ------------------------------------------------------------------------------
-
-def find_longest_word(s):
-    """
-    Returns the longest word in string s.
-    In case there are several, return the first.
-    """
-    return None
-
-
 def test_find_longest_word():
     text = "Three tomatoes are walking down the street"
     assert find_longest_word(text) == "tomatoes"
